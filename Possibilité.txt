@@ -1,0 +1,72 @@
+- Analyse de la segmentation client
+- Objectif : Identifier des groupes de clients avec des comportements similaires.
+	- K-Means Clustering : Utilisable via scikit-learn.
+	- Hierarchical Clustering : Implémenté avec scipy.cluster.hierarchy.
+	- DBSCAN : Une alternative pour gérer les clusters de densité variable (via scikit-learn).
+
+
+
+
+- Prédiction du churn (attrition client)
+- Objectif : Prédire si un client va se désengager.
+	- Régression Logistique : Implémentable avec scikit-learn.
+	- Random Forest : Pour une meilleure gestion des variables non linéaires (scikit-learn).
+	- Gradient Boosting (XGBoost, LightGBM) : Plus performant sur des jeux de données complexes.
+	- K-Nearest Neighbors (KNN) : Une approche simple et rapide pour les débutants.
+
+
+
+
+- Prévision des ventes
+- Objectif : Prédire les ventes futures en fonction des tendances passées.
+	- ARIMA/SARIMA : Utilisé via la bibliothèque statsmodels.
+	- Prophet : Une solution simple pour les séries temporelles.
+	- LSTM (Long Short-Term Memory) : Réseau neuronal pour séries temporelles (via TensorFlow ou PyTorch).
+
+
+
+
+- Recommandation de produits
+- Objectif : Proposer des produits pertinents aux clients en fonction de leurs habitudes d'achat.
+	- Collaborative Filtering avec Surprise : Surprise est une bibliothèque dédiée à la recommandation.
+	- Matrix Factorization (SVD) : Implémentable dans Surprise ou scikit-learn.
+	- Embedding avec TensorFlow/PyTorch : Approche avancée utilisant des réseaux de neurones.
+
+
+
+
+- Optimisation des stratégies de rétention
+- Objectif : Déterminer les stratégies de fidélisation les plus efficaces.
+	- Analyse de survie (Kaplan-Meier) : Implémenté avec lifelines.
+	- Clustering (K-Means ou DBSCAN) : Identifier les groupes pour appliquer des stratégies spécifiques.
+	- A/B Testing (Test d'hypothèses) : Via scipy.stats pour comparer les stratégies.
+
+
+
+
+- Analyse des saisons et des préférences
+- Objectif : Identifier l'impact des saisons et des moments d'achat sur les ventes.
+	- Decomposition des séries temporelles (STL) : Implémenté avec statsmodels.
+	- ARIMA/SARIMA : Pour analyser les tendances saisonnières (statsmodels).
+	- LSTM ou GRU : Réseaux neuronaux pour les tendances complexes (TensorFlow ou PyTorch).
+
+
+
+- Détection d’anomalies
+- Objectif : Identifier des transactions ou comportements inhabituels.
+	- Isolation Forest : Via scikit-learn.
+	- One-Class SVM : Implémenté dans scikit-learn.
+	- Autoencoders : Réseaux neuronaux dédiés à la détection d'anomalies (TensorFlow ou PyTorch).
+
+
+
+- Calcul de la valeur à vie client (Customer Lifetime Value - CLV)
+- Objectif : Prédire combien un client pourrait rapporter à long terme.
+	- Régression linéaire : Simple et rapide à implémenter avec scikit-learn.
+	- Ridge/Lasso Regression : Pour gérer les variables corrélées (scikit-learn).
+	- Gradient Boosting (XGBoost, LightGBM) : Plus efficace pour des relations complexes.
+	- Réseaux neuronaux simples : Implémentables avec TensorFlow ou PyTorch.
+
+
+
+
