@@ -1,0 +1,72 @@
+prediction_churn_client.py
+
+L'algorithme utilisé ici est Random Forest, un modèle d'apprentissage supervisé basé sur des arbres de décision. 
+Il sert à effectuer des tâches de classification et de régression. 
+Dans ce cas précis, il est utilisé pour prédire le churn (attrition client), c'est-à-dire déterminer si un client risque d'abandonner ou non les services de l'entreprise.
+
+Le modèle utilise trois caractéristiques (ou features) extraites du dataset :
+    Purchase_Frequency - Fréquence des achats effectués par le client.
+    Average_Order_Value - Valeur moyenne des commandes passées par le client.
+    Lifetime_Value - Valeur totale estimée d'un client sur toute sa durée de vie.
+
+La variable cible (target) est calculée à partir de la colonne Churn_Probability.
+    Un churn supérieur à 50 % est codé comme 1 (client susceptible de partir).
+    Un churn inférieur ou égal à 50 % est codé comme 0 (client fidèle).
+
+Explication de l'algorithme :
+
+L'algorithme utilisé ici est Random Forest, un modèle d'apprentissage supervisé basé sur des arbres de décision. Il sert à effectuer des tâches de classification et de régression. Dans ce cas précis, il est utilisé pour prédire le churn (attrition client), c'est-à-dire déterminer si un client risque d'abandonner ou non les services de l'entreprise.
+Données utilisées :
+
+Le modèle utilise trois caractéristiques (ou features) extraites du dataset :
+    Purchase_Frequency - Fréquence des achats effectués par le client.
+    Average_Order_Value - Valeur moyenne des commandes passées par le client.
+    Lifetime_Value - Valeur totale estimée d'un client sur toute sa durée de vie.
+
+La variable cible (target) est calculée à partir de la colonne Churn_Probability.
+    Un churn supérieur à 50 % est codé comme 1 (client susceptible de partir).
+    Un churn inférieur ou égal à 50 % est codé comme 0 (client fidèle).
+
+Prétraitement des données :
+    Normalisation :
+        Les caractéristiques sont normalisées avec StandardScaler pour garantir une distribution uniforme (moyenne = 0, écart-type = 1). 
+        Cela améliore la performance des algorithmes sensibles aux échelles des données.
+
+    Division des données :
+        Les données sont séparées en un ensemble d'entraînement (70 %) et un ensemble de test (30 %).
+        L'entraînement permet au modèle d'apprendre, tandis que l'ensemble de test sert à évaluer sa performance.
+
+Rapport de classification :
+
+Ce rapport fournit plusieurs métriques pour évaluer les performances du modèle :
+    Accuracy (Précision globale) :
+        Proportion d'échantillons correctement classés.
+        Exemple : Si l'accuracy est 0.85, cela signifie que 85 % des prédictions sont correctes.
+
+    Precision (Précision) :
+        Pourcentage des prédictions positives correctes.
+        Calcul : TP / (TP + FP)
+        TP = Vrais positifs, FP = Faux positifs.
+        Mesure la qualité des prédictions positives.
+
+    Recall (Rappel) :
+        Proportion des cas positifs correctement identifiés.
+        Calcul : TP / (TP + FN)
+        FN = Faux négatifs.
+        Évalue la capacité du modèle à détecter les cas positifs.
+
+    F1-Score :
+        Moyenne harmonique entre précision et rappel.
+        Calcul : 2 * (Precision * Recall) / (Precision + Recall)
+        Fournit un équilibre entre précision et rappel, surtout lorsque les classes sont déséquilibrées.
+
+    Support :
+        Nombre total d'échantillons dans chaque classe.
+        Sert à mesurer l'importance de chaque classe.
+
+Sortie attendue :
+    Scores d'évaluation affichés dans la console :
+        Accuracy, matrice de confusion et rapport de classification.
+
+    Fichier CSV des prédictions :
+        Contient deux colonnes : Actual (valeurs réelles) et Predicted (valeurs prédites).

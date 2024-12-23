@@ -1,0 +1,38 @@
+recommandation_produits.py
+
+L'algorithme utilisé est SVD (Singular Value Decomposition) appliqué au Collaborative Filtering. 
+Il sert à faire des recommandations de produits en se basant sur des évaluations ou préférences passées des utilisateurs.
+Collaborative Filtering fonctionne en analysant les comportements des utilisateurs pour identifier des patterns communs. 
+L'algorithme recommande ensuite des produits qu'un utilisateur pourrait aimer, en fonction des avis et des choix d'autres utilisateurs similaires.
+
+Données utilisées :
+    Customer_ID : Identifiant unique pour chaque client.
+    Product_ID : Identifiant unique pour chaque produit.
+    Average_Order_Value : Valeur moyenne des commandes passées par le client pour un produit. Elle est utilisée comme rating (score).
+
+    Ces données sont préparées sous forme de triplets (Client, Produit, Score) pour entraîner le modèle.
+
+Rapport de classification :
+    L'évaluation des performances du modèle repose sur deux métriques :
+        RMSE (Root Mean Square Error) :
+            Mesure l'écart quadratique moyen entre les notes prédites et réelles.
+            Valeur attendue : Plus elle est faible, meilleure est la précision du modèle.
+
+        MAE (Mean Absolute Error) :
+            Mesure l'écart absolu moyen entre les notes prédites et réelles.
+            Valeur attendue : Plus elle est faible, meilleure est la précision du modèle.
+
+    Ces deux métriques permettent d'évaluer la qualité des prédictions faites par le modèle.
+
+Sortie attendue :
+    Performances affichées dans la console :
+        RMSE et MAE indiquent la précision des prévisions.
+
+    Fichier CSV des recommandations :
+        Chemin : /mnt/data/product_recommendations.csv
+        Contenu :
+            Customer_ID : Identifiant du client.
+            Product_ID : Produit recommandé.
+            Estimated_Rating : Note prédite pour évaluer l'affinité entre le client et le produit.
+
+    Ce fichier peut être utilisé pour suggérer des produits personnalisés aux clients.

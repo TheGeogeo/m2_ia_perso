@@ -1,0 +1,40 @@
+prevision_ventes.py
+
+Prophet est un modèle développé par Facebook pour la prévision des séries temporelles. 
+Il est spécialement conçu pour gérer des données avec des tendances et des saisonnalités marquées.
+
+Fonctionnement :
+    Tendance : Il identifie la tendance générale des données sur une longue période.
+    Saisonnalité : Il détecte les motifs récurrents liés aux saisons (jour, mois, année).
+    Effets des jours fériés : Il peut intégrer des jours spécifiques ayant un impact sur les ventes.
+    Gestion des valeurs manquantes : Il est capable de traiter les valeurs manquantes dans les séries.
+    Prédiction robuste : Il fonctionne bien même avec des données bruitées.
+
+Données utilisées :
+    Le modèle utilise les colonnes suivantes du dataset :
+        Peak_Sales_Date (colonne 'ds' dans Prophet) :
+            Correspond à la date des ventes maximales pour chaque client ou produit.
+            Elle est utilisée comme index temporel.
+
+        Average_Order_Value (colonne 'y' dans Prophet) :
+            Représente la valeur moyenne des commandes passées.
+            Elle est la variable cible que l'on cherche à prédire sur une période future.
+
+Sortie attendue :
+    Graphique des prévisions :
+        Affiche la tendance future des ventes avec une ligne centrale (yhat) et des bandes d'incertitude (yhat_lower et yhat_upper).
+        Il permet de visualiser la prévision sur l'année à venir.
+
+    Fichier CSV des prévisions :
+        Enregistré sous le nom sales_forecast.csv.
+        Contient :
+            ds : Date prévue.
+            yhat : Prévision des ventes moyennes.
+            yhat_lower : Limite inférieure de la prévision (intervalle de confiance).
+            yhat_upper : Limite supérieure de la prévision.
+
+Rapport et métriques d'évaluation :
+    Contrairement aux modèles de classification, Prophet ne produit pas de rapport de classification. Cependant, il peut être évalué en utilisant :
+        Erreur absolue moyenne (MAE) : Mesure la différence moyenne entre les valeurs réelles et prévues.
+        Erreur quadratique moyenne (RMSE) : Mesure l'écart-type des erreurs de prédiction.
+        R² (Coefficient de détermination) : Mesure la proportion de la variance expliquée par le modèle.

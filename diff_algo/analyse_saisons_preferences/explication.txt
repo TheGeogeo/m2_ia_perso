@@ -1,0 +1,43 @@
+analyse_saisons_preferences.py
+
+L'algorithme utilisé ici est STL (Seasonal and Trend decomposition using Loess).
+Il permet d'analyser les séries temporelles en les décomposant en trois composantes principales :
+    Tendance (Trend) – La direction globale des données sur une longue période.
+    Saisonnalité (Seasonal) – Les fluctuations périodiques répétitives (quotidiennes, hebdomadaires, annuelles).
+    Résidus (Residual) – Les variations irrégulières ou aléatoires qui ne peuvent être expliquées par la tendance ou la saisonnalité.
+
+Cet algorithme est utilisé pour identifier l'impact des saisons et des moments d'achat sur les ventes afin d'aider à optimiser les stratégies de marketing et de planification des stocks.
+
+Données utilisées :
+    Peak_Sales_Date – Date des ventes maximales, utilisée comme index temporel.
+    Average_Order_Value – Valeur moyenne des commandes, utilisée comme variable principale à décomposer.
+
+    Ces données sont organisées sous forme de série temporelle avec des observations agrégées par jour (resample('D')).
+
+Rapport de classification :
+    L'algorithme STL ne génère pas de rapport de classification comme dans les modèles de machine learning.
+    Au lieu de cela, il fournit une décomposition des données en trois séries distinctes :
+        Trend (Tendance) :
+            Représente la trajectoire générale des ventes sur le temps.
+            Permet d'identifier les tendances de croissance ou de déclin à long terme.
+
+        Seasonal (Saisonnalité) :
+            Montre les motifs récurrents qui se répètent sur des périodes fixes (par semaine, mois ou année).
+            Aide à comprendre l'impact des saisons, des fêtes ou des promotions.
+
+        Residual (Résidu) :
+            Contient les variations inexpliquées après avoir retiré la tendance et la saisonnalité.
+            Utilisé pour détecter des anomalies ou des événements inattendus.
+
+Sortie attendue :
+    Graphique des composantes décomposées :
+        Montre visuellement la tendance, la saisonnalité et les résidus pour faciliter l'interprétation des résultats.
+
+    Fichier CSV des résultats :
+        Colonnes :
+            Date – Date des observations.
+            Trend – Valeurs de la tendance.
+            Seasonal – Valeurs de la saisonnalité.
+            Residual – Valeurs des résidus.
+
+    Ce fichier peut être utilisé pour analyser les tendances et prévoir les ventes futures ou ajuster les stratégies de marketing en fonction des fluctuations saisonnières.
