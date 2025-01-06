@@ -1,0 +1,9 @@
+@startuml
+actor Analyste
+rectangle "Analyse Données Clients" {
+  Analyste --> (Importer données)
+  Analyste --> (Segmenter clients)
+  Analyste --> (Analyser comportements)
+  Analyste --> (Prévoir CLV)
+}
+@enduml

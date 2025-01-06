@@ -1,0 +1,8 @@
+@startuml
+actor Utilisateur
+rectangle "Notifications et Alertes" {
+  Utilisateur --> (Créer alerte)
+  Utilisateur --> (Recevoir notification)
+  Utilisateur --> (Suivre historique)
+}
+@enduml

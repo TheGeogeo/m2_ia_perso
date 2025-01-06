@@ -1,0 +1,9 @@
+@startuml
+actor Utilisateur
+rectangle "Gestion Utilisateurs" {
+  Utilisateur --> (Créer un compte)
+  Utilisateur --> (Se connecter)
+  Utilisateur --> (Gérer son profil)
+  Utilisateur --> (Réinitialiser mot de passe)
+}
+@enduml

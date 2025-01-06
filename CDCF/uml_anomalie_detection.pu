@@ -1,0 +1,9 @@
+@startuml
+actor Analyste
+rectangle "Détection Anomalies" {
+  Analyste --> (Analyser transactions)
+  Analyste --> (Appliquer algorithmes)
+  Analyste --> (Générer alertes)
+  Analyste --> (Consulter historique)
+}
+@enduml

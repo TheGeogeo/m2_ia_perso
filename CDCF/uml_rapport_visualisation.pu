@@ -1,0 +1,9 @@
+@startuml
+actor Utilisateur
+rectangle "Gestion Rapports" {
+  Utilisateur --> (Créer rapport)
+  Utilisateur --> (Générer graphiques)
+  Utilisateur --> (Exporter rapport)
+  Utilisateur --> (Partager rapport)
+}
+@enduml

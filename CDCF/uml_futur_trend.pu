@@ -1,0 +1,9 @@
+@startuml
+actor Analyste
+rectangle "Prévisions et Tendances" {
+  Analyste --> (Analyser tendances)
+  Analyste --> (Identifier pics et creux)
+  Analyste --> (Prévoir comportements)
+  Analyste --> (Afficher résultats)
+}
+@enduml
