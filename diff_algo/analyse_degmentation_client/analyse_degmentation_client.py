@@ -23,13 +23,13 @@ scaled_features = scaler.fit_transform(features)
 
 # Déterminer le nombre optimal de clusters avec la méthode du coude
 wcss = []  # Within-Cluster-Sum-of-Squares
-for i in range(1, 11):
+for i in range(1, 25):
     kmeans = KMeans(n_clusters=i, init='k-means++', max_iter=300, n_init=10, random_state=42)
     kmeans.fit(scaled_features)
     wcss.append(kmeans.inertia_)
 
 plt.figure(figsize=(10, 6))
-plt.plot(range(1, 11), wcss, marker='o', linestyle='--')
+plt.plot(range(1, 25), wcss, marker='o', linestyle='--')
 plt.title('Méthode du Coude pour déterminer k')
 plt.xlabel('Nombre de Clusters')
 plt.ylabel('WCSS')
