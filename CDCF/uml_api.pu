@@ -1,9 +1,0 @@
-@startuml
-actor Administrateur
-rectangle "Intégrations API" {
-  Administrateur --> (Configurer connexions)
-  Administrateur --> (Gérer autorisations)
-  Administrateur --> (Surveiller API)
-  Administrateur --> (Diagnostiquer erreurs)
-}
-@enduml

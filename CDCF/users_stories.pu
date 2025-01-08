@@ -1,0 +1,50 @@
+@startuml
+
+class Contact {
+  + ID: String
+  + Nom: String
+  + Email: String
+  + Téléphone: String
+}
+
+class Interaction {
+  + Date: String
+  + Type: String
+  + Details: String
+}
+
+class Workflow {
+  + ID: String
+  + Nom: String
+  + Etapes: String
+}
+
+class Opportunite {
+  + ID: String
+  + Statut: String
+  + Etape: String
+}
+
+class Ticket {
+  + ID: String
+  + Statut: String
+  + Description: String
+}
+
+class Chatbot {
+  + Nom: String
+  + Reponses: String
+}
+
+class Audit {
+  + ID: String
+  + Date: String
+  + Resultat: String
+}
+
+Contact --> Interaction : Historique
+Workflow --> Opportunite : Processus
+Chatbot --> Ticket : Générer
+Audit --> Opportunite : Vérifier
+
+@enduml

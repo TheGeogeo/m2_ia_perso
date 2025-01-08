@@ -1,0 +1,16 @@
+@startuml
+class Opportunité {
+  - ID: String
+  - Statut: String
+  - Valeur: Float
+  - Échéance: Date
+}
+
+class Tâche {
+  - ID: String
+  - Description: String
+  - DateLimite: Date
+}
+
+Opportunité *-- Tâche
+@enduml

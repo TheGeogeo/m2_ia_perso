@@ -1,0 +1,15 @@
+@startuml
+class Analyse {
+  - Type: String
+  - Résultat: String
+  - Date: Date
+}
+
+class Recommandation {
+  - ID: String
+  - Description: String
+  - Score: Float
+}
+
+Analyse *-- Recommandation
+@enduml

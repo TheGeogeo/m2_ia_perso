@@ -1,0 +1,16 @@
+@startuml
+class Ticket {
+  - ID: String
+  - Statut: String
+  - Description: String
+  - Priorité: String
+}
+
+class Chatbot {
+  - ID: String
+  - Nom: String
+  - Réponses: List<String>
+}
+
+Ticket *-- Chatbot
+@enduml

@@ -1,0 +1,18 @@
+Présentation de l’entreprise :
+
+NexaCRM est une entreprise fictive spécialisée dans la gestion de la relation client (CRM) assistée par l’intelligence artificielle. Fondée en 2023 et basée à Paris, elle développe des solutions technologiques visant à optimiser l’interaction avec les clients tout en offrant des analyses prédictives pour anticiper leurs besoins. Son produit phare, NexaCore, est une plateforme SaaS qui intègre des fonctionnalités avancées telles que l’automatisation marketing, la segmentation comportementale et l’intelligence conversationnelle pour la gestion des interactions.
+
+L’entreprise s’adresse principalement aux PME, ETI et startups en forte croissance, offrant des outils de gestion flexibles et personnalisables. NexaCRM se démarque par sa capacité à utiliser des algorithmes d’apprentissage automatique pour proposer des recommandations en temps réel et faciliter les décisions stratégiques. Elle met également un point d’honneur à assurer la conformité RGPD grâce à sa suite NexaGuard, garantissant la sécurité des données collectées et traitées.
+
+Depuis sa création, NexaCRM a connu une croissance rapide, attirant plus de 500 entreprises clientes dans des secteurs variés tels que le e-commerce, la finance et les services professionnels. Cependant, malgré cette expansion, elle se trouve aujourd’hui confrontée à un problème de fidélisation client qui freine son développement.
+
+
+Problème actuel de churn:
+
+NexaCRM fait face à un problème croissant de churn qui menace sa croissance et sa rentabilité. Au cours des six derniers mois, l’entreprise a observé une augmentation significative de son taux d’attrition, passant de 10 % à 18 %. Cette tendance inquiétante résulte principalement d’une adoption incomplète des fonctionnalités par ses clients, qui perçoivent parfois la plateforme comme complexe ou peu intuitive.
+
+De nombreux utilisateurs signalent des difficultés d’intégration avec leurs systèmes existants, tels que des ERP ou des outils de gestion des ventes, ce qui entraîne une insatisfaction et un désengagement progressif. Par ailleurs, le support client est jugé insuffisant, avec des délais de réponse trop longs et un manque de personnalisation dans les solutions proposées, ce qui aggrave le sentiment d’abandon ressenti par certains clients.
+
+La concurrence sur le marché des CRM, dominée par des acteurs comme HubSpot et Salesforce, exerce également une pression importante. Ces concurrents offrent des modèles tarifaires plus attractifs et des intégrations simplifiées, ce qui pousse certains clients à abandonner NexaCRM au profit de solutions jugées plus flexibles et mieux adaptées à leurs besoins.
+
+Enfin, les retours clients révèlent que l’expérience utilisateur et l’interface de la plateforme nécessitent des améliorations. Plusieurs utilisateurs se disent frustrés par la complexité des tableaux de bord et des outils d’analyse, ce qui réduit leur engagement et leur fidélité. Combiné à une perception de coûts élevés par rapport à la valeur perçue, notamment chez les startups et les PME, ce contexte alimente la hausse du churn et accentue la pression sur NexaCRM pour réagir rapidement.

@@ -1,0 +1,24 @@
+@startuml
+class Contact {
+  - ID: String
+  - Nom: String
+  - Email: String
+  - Téléphone: String
+  - HistoriqueInteractions: List<Interaction>
+}
+
+class Interaction {
+  - Date: Date
+  - Type: String
+  - Détails: String
+}
+
+class Segment {
+  - ID: String
+  - Nom: String
+  - Critères: String
+}
+
+Contact --* Interaction
+Contact *-- Segment
+@enduml

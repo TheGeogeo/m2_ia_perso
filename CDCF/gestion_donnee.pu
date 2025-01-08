@@ -1,0 +1,15 @@
+@startuml
+class Donnée {
+  - ID: String
+  - Type: String
+  - NiveauDeSécurité: String
+}
+
+class Audit {
+  - ID: String
+  - Date: Date
+  - Résultat: String
+}
+
+Donnée *-- Audit
+@enduml

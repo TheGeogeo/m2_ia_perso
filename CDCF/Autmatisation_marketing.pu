@@ -1,0 +1,17 @@
+@startuml
+class Campagne {
+  - ID: String
+  - Nom: String
+  - Canal: String
+  - Statut: String
+  - Performances: Map<String, Integer>
+}
+
+class Workflow {
+  - ID: String
+  - Nom: String
+  - Étapes: List<String>
+}
+
+Campagne *-- Workflow
+@enduml
