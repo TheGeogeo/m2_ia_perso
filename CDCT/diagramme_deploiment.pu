@@ -1,0 +1,39 @@
+@startuml
+
+node "Client" {
+  [Navigateur Web]
+}
+
+node "Frontend" {
+  [ReactJS]
+}
+
+node "Backend" {
+  [NodeJS]
+  [GraphQL]
+}
+
+node "Base de Données" {
+  database PostgreSQL
+  database MongoDB
+}
+
+node "Middleware" {
+  [Apache Kafka]
+}
+
+node "Infrastructure" {
+  [Docker]
+  [Kubernetes]
+  [AWS]
+}
+
+[Navigateur Web] --> [ReactJS]
+[ReactJS] --> [NodeJS] : Requêtes API REST/GraphQL
+[NodeJS] --> [PostgreSQL] : Données relationnelles
+[NodeJS] --> [MongoDB] : Données semi-structurées
+[NodeJS] --> [Apache Kafka] : Flux de données
+[Docker] --> [Kubernetes] : Orchestration
+[Kubernetes] --> [AWS] : Hébergement
+
+@enduml

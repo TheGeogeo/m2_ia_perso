@@ -1,0 +1,47 @@
+@startuml
+
+package "NexaCore" {
+  package "Gestion des Contacts" {
+    [Base de Données Clients]
+    [Segmentation]
+    [Importation/Exportation]
+  }
+  
+  package "Automatisation Marketing" {
+    [Création de Campagnes]
+    [Scénarios Automatisés]
+    [Tests A/B]
+    [Analyses]
+  }
+
+  package "Gestion des Ventes" {
+    [Suivi des Opportunités]
+    [Prévisions]
+    [Devis et Contrats]
+  }
+
+  package "Support Client" {
+    [Tickets]
+    [Chatbot IA]
+    [Base de Connaissances]
+  }
+
+  package "Analyse et Reporting" {
+    [Tableaux de Bord]
+    [Rapports]
+    [Analyse Prédictive]
+  }
+
+  package "Sécurité et Conformité" {
+    [Permissions]
+    [Chiffrement]
+    [Audits]
+  }
+
+  package "Intégrations et API" {
+    [ERP/CRM Tiers]
+    [Synchronisation]
+    [API Ouvertes]
+  }
+}
+@enduml

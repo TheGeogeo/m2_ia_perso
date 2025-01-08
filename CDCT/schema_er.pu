@@ -1,0 +1,49 @@
+@startuml
+
+entity Utilisateurs {
+  * id : UUID
+  * nom : VARCHAR
+  * email : VARCHAR
+  * mot_de_passe : VARCHAR
+  * role : VARCHAR
+  * date_creation : TIMESTAMP
+}
+
+entity Contacts {
+  * id : UUID
+  * utilisateur_id : UUID
+  * nom : VARCHAR
+  * email : VARCHAR
+  * telephone : VARCHAR
+  * statut : VARCHAR
+}
+
+entity Opportunites {
+  * id : UUID
+  * contact_id : UUID
+  * montant : FLOAT
+  * etat : VARCHAR
+  * date_cloture : DATE
+}
+
+entity Campagnes {
+  * id : UUID
+  * nom : VARCHAR
+  * description : TEXT
+  * date_lancement : DATE
+}
+
+entity Tickets {
+  * id : UUID
+  * utilisateur_id : UUID
+  * description : TEXT
+  * statut : VARCHAR
+  * date_creation : TIMESTAMP
+}
+
+Utilisateurs ||--o{ Contacts : possède
+Contacts ||--o{ Opportunites : génère
+Utilisateurs ||--o{ Tickets : crée
+Campagnes ||--o{ Opportunites : suit
+
+@enduml

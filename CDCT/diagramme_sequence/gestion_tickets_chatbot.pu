@@ -1,0 +1,13 @@
+@startuml
+actor Client
+participant Chatbot
+participant Backend
+participant BaseDeDonnees
+
+Client -> Chatbot : Pose une question
+Chatbot -> Backend : Analyse la requête avec IA
+Backend -> BaseDeDonnees : Vérifie les informations et l’historique
+BaseDeDonnees --> Backend : Retourne les résultats
+Backend --> Chatbot : Prépare une réponse
+Chatbot --> Client : Fournit la réponse ou crée un ticket
+@enduml

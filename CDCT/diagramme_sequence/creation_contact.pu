@@ -1,0 +1,13 @@
+@startuml
+actor Utilisateur
+participant Frontend as FE
+participant Backend as BE
+participant BaseDeDonnees as DB
+
+Utilisateur -> FE : Remplit le formulaire de contact
+FE -> BE : Envoie les données via API REST
+BE -> DB : Insère les données dans la table 'Contacts'
+DB --> BE : Confirme l’enregistrement
+BE --> FE : Retourne une confirmation
+FE --> Utilisateur : Affiche un message de succès
+@enduml
