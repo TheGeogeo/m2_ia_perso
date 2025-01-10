@@ -1,0 +1,13 @@
+15.2
+*.1 : pourquoi faire de la detection de churn
+*.2 : quels sont les avantages de réduire churn via le big data
+
+15.3
+*.1 : detail sur les métadonnées (d'où il vients, extres de vrai donnée ou fictive, pourquoi c'est pernitant pour répondre à la question) du dataset.
+*.2 : les outils d'import et visualisation (matplotlib, pandas, etc) sauf les modeles.
+*.3 : les hypotese et les explorations des données, EDA
+*.4 : exemple de code de processus d'import et de stockage des données (dans une base de donnée, SQLAlchemy)
+
+15.4
+*.1 : les distribution des données et comment les normaliser 
+*.2 : cohéreance des données 
